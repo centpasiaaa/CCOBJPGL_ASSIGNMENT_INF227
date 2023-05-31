@@ -14,9 +14,12 @@ public class App extends Application {
     public void start(Stage stage) throws Exception {
 
         try {
-            Parent root = FXMLLoader.load(getClass().getResource("/view/Restaurant.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource("/view/Login.fxml"));
             Scene scene = new Scene(root);
+            // Disables resizing of window
+            stage.setResizable(false);
             stage.setScene(scene);
+
             stage.show();
 
         } catch (Exception e) {
